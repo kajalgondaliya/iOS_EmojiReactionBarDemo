@@ -37,4 +37,4 @@ extension ViewController: ReactionPalletDelegate {
 }
 ```
 ## Preview
-![preview](https://github.com/kajalgondaliya/iOS_EmojiReactionBarDemo/blob/main/Demo.gif)
+![](https://github.com/kajalgondaliya/iOS_EmojiReactionBarDemo/blob/main/Demo.gif)
