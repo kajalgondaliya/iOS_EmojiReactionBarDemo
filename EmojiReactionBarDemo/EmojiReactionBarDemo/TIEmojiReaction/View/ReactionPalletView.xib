@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ReactionPalletView" customModule="EmojiReactionBarDemo" customModuleProvider="target">
+            <connections>
+                <outlet property="emojiConfettiView" destination="XVN-bo-Q6O" id="hrs-Ty-UCb"/>
+                <outlet property="emojisCollectionView" destination="tdU-A2-aLd" id="Vtl-Nd-8CS"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nIP-7I-bVO">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                    <subviews>
+                        <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="tdU-A2-aLd">
+                            <rect key="frame" x="0.0" y="762" width="414" height="100"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="100" id="wGB-0h-v5z"/>
+                            </constraints>
+                            <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="vwf-V8-uwi">
+                                <size key="itemSize" width="128" height="128"/>
+                                <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            </collectionViewFlowLayout>
+                            <cells>
+                                <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="QlK-Vp-8xk">
+                                    <rect key="frame" x="0.0" y="-14" width="128" height="128"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="HEt-hs-vU2">
+                                        <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                    </collectionViewCellContentView>
+                                </collectionViewCell>
+                            </cells>
+                        </collectionView>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XVN-bo-Q6O" customClass="TIReactionConfettiView" customModule="EmojiReactionBarDemo" customModuleProvider="target">
+                            <rect key="frame" x="10" y="10" width="394" height="742"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="tdU-A2-aLd" firstAttribute="leading" secondItem="nIP-7I-bVO" secondAttribute="leading" id="1cD-h7-v9n"/>
+                        <constraint firstItem="XVN-bo-Q6O" firstAttribute="top" secondItem="nIP-7I-bVO" secondAttribute="top" constant="10" id="7n6-3F-Jme"/>
+                        <constraint firstAttribute="trailing" secondItem="tdU-A2-aLd" secondAttribute="trailing" id="EWX-mS-eiF"/>
+                        <constraint firstAttribute="trailing" secondItem="XVN-bo-Q6O" secondAttribute="trailing" constant="10" id="SHr-lu-Tvv"/>
+                        <constraint firstItem="tdU-A2-aLd" firstAttribute="top" secondItem="XVN-bo-Q6O" secondAttribute="bottom" constant="10" id="pvI-OZ-FVm"/>
+                        <constraint firstItem="XVN-bo-Q6O" firstAttribute="leading" secondItem="nIP-7I-bVO" secondAttribute="leading" constant="10" id="q0P-Jg-8bs"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="nIP-7I-bVO" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="JDi-Ey-x2r"/>
+                <constraint firstAttribute="bottom" secondItem="nIP-7I-bVO" secondAttribute="bottom" id="cXL-ck-jVH"/>
+                <constraint firstItem="nIP-7I-bVO" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="hEm-lG-YiK"/>
+                <constraint firstItem="nIP-7I-bVO" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="kbI-95-bEx"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="tdU-A2-aLd" secondAttribute="bottom" id="u6J-E4-lfM"/>
+            </constraints>
+            <point key="canvasLocation" x="123.91304347826087" y="-172.43303571428569"/>
+        </view>
+    </objects>
+</document>

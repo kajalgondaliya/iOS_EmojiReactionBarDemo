@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="dark"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="EmojiReactionBarDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SbP-Xl-k8f">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Satus" translatesAutoresizingMaskIntoConstraints="NO" id="fpz-5k-B1W">
+                                        <rect key="frame" x="20" y="40" width="374" height="836"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="fpz-5k-B1W" firstAttribute="leading" secondItem="SbP-Xl-k8f" secondAttribute="leading" constant="20" id="4Dl-A4-Zrl"/>
+                                    <constraint firstAttribute="bottom" secondItem="fpz-5k-B1W" secondAttribute="bottom" constant="20" id="LBj-QZ-PCD"/>
+                                    <constraint firstItem="fpz-5k-B1W" firstAttribute="top" secondItem="SbP-Xl-k8f" secondAttribute="top" constant="40" id="hTO-nt-gIb"/>
+                                    <constraint firstAttribute="trailing" secondItem="fpz-5k-B1W" secondAttribute="trailing" constant="20" id="kBb-xr-4hx"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Z3z-JR-eVy" customClass="ReactionPalletView" customModule="EmojiReactionBarDemo" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="SbP-Xl-k8f" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="2Eh-ke-ydg"/>
+                            <constraint firstItem="Z3z-JR-eVy" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="7q8-CZ-TtK"/>
+                            <constraint firstItem="SbP-Xl-k8f" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="N5X-6H-0ol"/>
+                            <constraint firstItem="Z3z-JR-eVy" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="cQ4-PS-yKi"/>
+                            <constraint firstItem="Z3z-JR-eVy" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="efl-dG-lsr"/>
+                            <constraint firstAttribute="bottom" secondItem="SbP-Xl-k8f" secondAttribute="bottom" id="k89-UG-ghA"/>
+                            <constraint firstAttribute="trailing" secondItem="SbP-Xl-k8f" secondAttribute="trailing" id="pKf-cU-30S"/>
+                            <constraint firstItem="Z3z-JR-eVy" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="v38-xD-hxe"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="emojiConfettiView" destination="Z3z-JR-eVy" id="g1c-ZQ-ddU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="91.741071428571431"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Satus" width="224" height="224"/>
+    </resources>
+</document>
