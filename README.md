@@ -9,7 +9,7 @@ Put `TIEmojiReaction` folder in your Xcode project. Make sure to enable `Copy it
 
 1. Set 'ReactionPalletView' to a custom class of UIView.
 
-![Usage_1](/uploads/def633a71c952242233d7cb356616653/ReactionPallet.png)
+![Usage_1](https://github.com/kajalgondaliya/iOS_EmojiReactionBarDemo/blob/main/ReactionPallet.png)
 
 ## OR
 
@@ -37,4 +37,4 @@ extension ViewController: ReactionPalletDelegate {
 }
 ```
 ## Preview
-![preview](/uploads/2af657489dbf2dcec96bb313a1e05f4a/ezgif.com-optimize.gif)
+![preview](https://github.com/kajalgondaliya/iOS_EmojiReactionBarDemo/blob/main/Demo.gif)
